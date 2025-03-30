@@ -1,0 +1,241 @@
+
+/*
+  页面或组件根节点必须有 Chen 标识类；
+  其中 page- 为页面标识，如 page-index 为首页；
+  component- 为组件标识，如 component-coupon 为优惠券组件；
+*/
+.Chen[class*=page-] {
+  color: #333;
+  font-family: helvetica, 'Heiti SC', PingFangSC-Light;
+}
+
+.price {
+  font-family: Arial;
+  display: inline-block;
+  color: #e43130;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/* showToast提示框样式 */
+.uni-sample-toast .uni-simple-toast__text{
+  width: max-content;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+/* 价格数字显示不同大小 */
+
+.symbol {
+  font-size: 24rpx;
+}
+
+.big-num {
+  font-size: 32rpx;
+}
+
+.small-num {
+  font-size: 24rpx;
+}
+
+
+/*
+*改变checkbox样式
+*自定义样式
+*/
+/* reg	  */
+uni-checkbox-group {
+  width: 100% !important;
+}
+
+uni-checkbox-group uni-label {
+  width: 33% !important;
+  display: inline-flex;
+  margin-bottom: 20rpx;
+}
+
+/*checkbox 选项框大小  */
+uni-checkbox .uni-checkbox-input {
+  width: 38rpx !important;
+  height: 38rpx !important;
+  border-radius: 50% !important;
+}
+
+/*checkbox选中后样式  */
+uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked {
+  background: #e43130;
+  border: 1px solid transparent !important;
+}
+
+/*checkbox选中后图标样式  */
+uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked::before {
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  text-align: center;
+  font-size: 18rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-60%, -50%) scale(1);
+}
+
+/*
+*改变radio样式
+*自定义样式
+*/
+/* 未选中的 背景样式 */
+uni-radio .uni-radio-input {
+  height: 36rpx;
+  width: 36rpx;
+  border-radius: 50%;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* 选中后的 背景样式 */
+uni-radio .uni-radio-input.uni-radio-input-checked {
+  border: none !important;
+  background: #e43130 !important;
+}
+
+/* 选中后的 对勾样式 */
+uni-radio .uni-radio-input.uni-radio-input-checked::before {
+  border-radius: 50%;
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #fff;
+  background: #e43130;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* #ifdef MP-WEIXIN */
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  border-radius: 50%;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #e43130;
+  border-color: #e43130;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-disabled {
+  border: none;
+  background: #e1e1e1 !important;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* 微信小程序按钮样式 */
+button::after {
+  border: none;
+}
+
+/* #endif */
+
+
+
+/* loading */
+.me-bg-loading::before {
+  content: '' !important;
+  position: fixed !important;
+  z-index: 10 !important;
+  left: calc((100vw - 300vmax) / 2) !important;
+  top: calc((100vh - 300vmax) / 2) !important;
+  width: 300vmax !important;
+  height: 300vmax !important;
+  display: inline-block;
+  /* loading icon+动画 */
+  /* #ifdef MP-WEIXIN */
+  animation: me-loading 1s steps(12) infinite !important;
+  background: white url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat center 100rpx !important;
+  /* #endif */
+  background-size: 100rpx !important;
+  /*noinspection CssOverwrittenProperties*/
+  background-position: center !important;
+}
+
+@keyframes me-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+
+/* 隐藏头部 */
+/* #ifdef H5 */
+uni-page-head {
+  display: none;
+}
+/* #endif */
+
+/* 新增底部tab挡住左侧分类tab点击 */
+.uni-tabbar-bottom {
+  bottom: 0 !important;
+}
+
+/* 解决使用ImgShow组件小程序图片不显示问题 */
+img-show {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* z-paging 返回顶部按钮的图片样式 */
+.zp-back-to-top-img {
+  width: 40rpx !important;
+  height: 40rpx !important;
+}
+
+uni-button:after {
+  display: none;
+}
+
+/* h5低版本浏览兼容 */
+page {
+  --chen-safe-area-inset-bottom: env(safe-area-inset-bottom);
+}
+/* #ifdef H5 */
+page {
+  --chen-safe-area-inset-bottom: 0px;
+}
+@supports (bottom: constant(safe-area-inset-bottom)){
+  page {
+    --chen-safe-area-inset-bottom: constant(safe-area-inset-bottom);
+  }
+}
+@supports (bottom:env(safe-area-inset-bottom)){
+  page {
+    --chen-safe-area-inset-bottom: env(safe-area-inset-bottom);
+  }
+}
+/* #endif */
+/* h5低版本浏览兼容end */
+
+/* 移除uni自带的cdn请求 */
+page::after {
+  content: none !important;
+}
+
+body::after {
+  content: none !important;
+}

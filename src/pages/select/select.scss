@@ -1,0 +1,278 @@
+/* 文件选择页样式 */
+
+// 主题颜色变量
+$primary-color: #6a5acd;
+$secondary-color: #9370db;
+$accent-color: #7b68ee;
+$background-color: #f8f9ff;
+$card-bg-color: #ffffff;
+$text-color: #333;
+$text-secondary: #666;
+$success-color: #4caf50;
+$warning-color: #ff9800;
+$danger-color: #f44336;
+
+.select-container {
+  background-color: $background-color;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: #fff;
+  padding: 15px 0;
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.upload-container {
+  background-color: $card-bg-color;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.upload-area {
+  border: 2px dashed #e0e0e0;
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  &:active {
+    border-color: $primary-color;
+    background-color: rgba($primary-color, 0.05);
+  }
+}
+
+.upload-icon {
+  font-size: 50px;
+  color: $primary-color;
+  margin-bottom: 15px;
+}
+
+.upload-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.upload-hint {
+  color: $text-secondary;
+  font-size: 14px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: $text-secondary;
+
+  &::before,
+  &::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 0 15px;
+  }
+}
+
+.browse-btn {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 500;
+  width: 50%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba($primary-color, 0.3);
+  }
+
+  .icon {
+    margin-right: 8px;
+  }
+}
+
+.selected-file {
+  background-color: rgba($primary-color, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    min-width: 40px; // 添加最小宽度确保图标不会被挤压
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0; // 防止图标被压缩
+
+    // 图片图标样式
+    .file-icon-img {
+      width: 20px;
+      height: 20px;
+    }
+
+    // 其他图标样式保持不变
+    &--pdf {
+      background-color: $danger-color;
+      color: white;
+    }
+
+    &--doc {
+      background-color: #4285f4;
+      color: white;
+    }
+
+    &--xls {
+      background-color: #0f9d58;
+      color: white;
+    }
+
+    &--ppt {
+      background-color: #db4437;
+      color: white;
+    }
+
+    &--img {
+      background-color: #ff9800;
+      color: white;
+    }
+  }
+
+  &__details {
+    flex-grow: 1;
+    flex-shrink: 1; // 允许内容区域收缩
+    min-width: 0; // 关键属性：允许子元素使用text-overflow
+    overflow: hidden; // 确保内容不会溢出
+  }
+
+  &__name {
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; // 确保宽度占满父容器
+  }
+
+  &__meta {
+    color: $text-secondary;
+    font-size: 12px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__remove {
+    color: $danger-color;
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 10px; // 增加左侧间距
+    flex-shrink: 0; // 防止删除按钮被压缩
+    min-width: 30px; // 确保删除按钮有最小宽度
+    display: flex; // 使用flex布局使图标居中
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.next-btn {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 25px;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 100%;
+  height: 45px; // 降低按钮高度
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; // 确保文字居中
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 15px rgba($primary-color, 0.3);
+  }
+
+  .icon {
+    margin-left: 8px;
+  }
+}
+
+.format-info {
+  background-color: $card-bg-color;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 10px;
+      color: $primary-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__badge {
+    background-color: rgba($primary-color, 0.1);
+    color: $primary-color;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__text {
+    color: $text-secondary;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.format-kong {
+  height: 30px;
+}

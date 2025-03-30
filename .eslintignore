@@ -1,0 +1,14 @@
+# eslint 忽略列表
+
+# disk编译目录
+dist
+
+build/*.js
+src/assets
+src/components/tki-barcode
+src/js_sdk
+src/utils/jwx
+
+uni_modules
+auto-imports.d.ts
+

@@ -1,0 +1,201 @@
+.page-container {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.settings-container {
+  background-color: var(--card-bg-color);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.settings-section {
+  margin-bottom: 25px;
+}
+
+.settings-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+
+  uni-icons {
+    margin-right: 10px;
+  }
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.setting-label {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.setting-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: rgba(106, 90, 205, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.setting-text {
+  flex: 1;
+}
+
+.setting-name {
+  font-size: 15px;
+  margin: 0 0 3px;
+  font-weight: 500;
+  display: block;
+  color: var(--text-color);
+}
+
+.setting-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 0;
+  display: block;
+}
+
+.setting-switch {
+  transform: scale(0.8);
+}
+
+.setting-value {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.btn-clear-cache {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+.version-info {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 20px;
+}
+
+/* 弹窗样式 */
+.popup-content {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.popup-header {
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.popup-body {
+  padding: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.language-option:hover {
+  background-color: rgba(106, 90, 205, 0.05);
+}
+
+.language-option.selected {
+  background-color: rgba(106, 90, 205, 0.1);
+}
+
+.language-flag {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.language-name {
+  flex: 1;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+.popup-footer {
+  padding: 15px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between; /* 改为两端对齐 */
+  gap: 10px;
+}
+
+.popup-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  min-width: 80px;
+  text-align: center;
+  height: auto;
+  line-height: normal;
+  flex: 1; /* 添加这一行，使两个按钮宽度相等 */
+}
+
+.btn-cancel {
+  background-color: #f0f0f0;
+  color: var(--text-color);
+}
+
+.btn-confirm {
+  background-color: #6a5acd;
+  color: white;
+  font-weight: 500;
+}

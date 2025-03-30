@@ -1,0 +1,188 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "backgroundTextStyle": "dark",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "backgroundTextStyle": "dark",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/select/select",
+      "style": {
+        "backgroundTextStyle": "dark",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/guide/guide",
+      "style": {
+        "backgroundTextStyle": "dark",
+        "navigationBarTitleText": "指南"
+      }
+    },
+    {
+      "path": "pages/batch/batch",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "批量转换"
+      }
+    },
+    {
+      "path": "pages/member/member",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "VIP会员"
+      }
+    },
+    {
+      "path": "pages/option/option",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "转换选项"
+      }
+    },
+    {
+      "path": "pages/pay/pay",
+      "style": {
+        "backgroundTextStyle": "light"
+      }
+    },
+    {
+      "path": "pages/paySuccess/paySuccess",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "支付成功"
+      }
+    },
+    {
+      "path": "pages/progress/progress",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "转换进度"
+      }
+    },
+    {
+      "path": "pages/result/result",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "转换结果"
+      }
+    },
+    {
+      "path": "pages/history/history",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "历史记录"
+      }
+    },
+    {
+      "path": "pages/about/about",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "关于我们"
+      }
+    },
+    {
+      "path": "pages/settings/settings",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "设置"
+      }
+    },
+    {
+      "path": "pages/feedback/feedback",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "意见反馈"
+      }
+    },
+    {
+      "path": "pages/agreement/agreement",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "用户协议"
+      }
+    },
+    {
+      "path": "pages/privacy/privacy",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "隐私政策"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/change-password/change-password",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "修改密码"
+      }
+    },
+    {
+      "path": "pages/reset-password/reset-password",
+      "style": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "重置密码"
+      }
+    }
+  ],
+  "globalStyle": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTextStyle": "black",
+    "backgroundColorTop": "#6a5acd",
+    "backgroundColorBottom": "#f5f5f5",
+    "backgroundColor": "#F8F8F8"
+  },
+  "subPackages": [
+  ],
+  "tabBar": {
+    "backgroundColor": "#f7f7fa",
+    "selectedColor": "#6a5acd",
+    "color": "#333333",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/images/home.png",
+        "selectedIconPath": "/static/images/home-select.png"
+      },
+      {
+        "text": "转换",
+        "pagePath": "pages/select/select",
+        "iconPath": "/static/images/cover.png",
+        "selectedIconPath": "/static/images/cover-select.png"
+      },
+      {
+        "text": "历史",
+        "pagePath": "pages/history/history",
+        "iconPath": "/static/images/guide.png",
+        "selectedIconPath": "/static/images/guide-select.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "/static/images/my.png",
+        "selectedIconPath": "/static/images/my-select.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+.agreement-page {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding-bottom: 140rpx;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 0;
+}
+
+.back-button {
+  color: white;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+}
+
+.placeholder {
+  width: 48rpx;
+}
+
+.content-area {
+  margin-top: 30rpx;
+}
+
+.agreement-container {
+  background-color: var(--card-bg-color);
+  border-radius: 30rpx;
+  padding: 50rpx;
+  margin: 40rpx 0;
+  box-shadow: 0 10rpx 30rpx rgba(0, 0, 0, 0.05);
+}
+
+.agreement-title {
+  font-size: 38rpx;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 40rpx;
+  text-align: center;
+  display: block;
+}
+
+.agreement-date {
+  font-size: 28rpx;
+  color: var(--text-secondary);
+  margin-bottom: 40rpx;
+  text-align: center;
+  display: block;
+}
+
+.agreement-section {
+  margin-bottom: 50rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-bottom: 30rpx;
+  color: var(--primary-color);
+  display: block;
+}
+
+.agreement-text {
+  font-size: 28rpx;
+  line-height: 1.7;
+  color: var(--text-color);
+  text-align: justify;
+  margin-bottom: 20rpx;
+  display: block;
+}
+
+.agreement-list {
+  padding-left: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.list-item {
+  margin-bottom: 20rpx;
+  text-align: justify;
+  font-size: 28rpx;
+  line-height: 1.7;
+  color: var(--text-color);
+}

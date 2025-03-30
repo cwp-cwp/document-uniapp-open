@@ -1,0 +1,281 @@
+/* 转换选项页样式 */
+.option-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9ff;
+  padding-bottom: 120rpx;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30rpx;
+}
+
+.selected-file {
+  background-color: rgba(106, 90, 205, 0.1);
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 16rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30rpx;
+
+    /* 添加图片图标样式 */
+    .file-icon-img {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--pdf {
+      background-color: #f44336;
+    }
+
+    &--word {
+      background-color: #2196f3;
+    }
+
+    &--excel {
+      background-color: #4caf50;
+    }
+
+    &--ppt {
+      background-color: #ff9800;
+    }
+
+    &--image {
+      background-color: #9c27b0;
+    }
+
+    &--txt {
+      background-color: #607d8b;
+    }
+  }
+
+  &__details {
+    flex: 1;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 32rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500rpx;
+  }
+
+  &__meta {
+    color: #666;
+    font-size: 26rpx;
+    margin-top: 4rpx;
+  }
+}
+
+.options-container {
+  background-color: #fff;
+  border-radius: 30rpx;
+  padding: 40rpx;
+  box-shadow: 0 10rpx 30rpx rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+
+  &__text {
+    font-size: 32rpx;
+    font-weight: 600;
+    margin-left: 16rpx;
+  }
+}
+
+.mt-4 {
+  margin-top: 40rpx;
+}
+
+.format-option {
+  background-color: #fff;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+
+  &--active {
+    border-color: #6a5acd;
+    background-color: rgba(106, 90, 205, 0.05);
+    box-shadow: 0 6rpx 20rpx rgba(106, 90, 205, 0.2);
+  }
+}
+
+.format-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30rpx;
+
+  /* 添加格式图标图片样式 */
+  .format-icon-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--pdf {
+    background-color: #f44336;
+  }
+
+  &--word {
+    background-color: #2196f3;
+  }
+
+  &--excel {
+    background-color: #4caf50;
+  }
+
+  &--ppt {
+    background-color: #ff9800;
+  }
+
+  &--image {
+    background-color: #9c27b0;
+  }
+
+  &--txt {
+    background-color: #607d8b;
+  }
+
+  &--html {
+    background-color: #c1ccaa;
+  }
+
+}
+
+.format-info {
+  flex: 1;
+}
+
+.format-name {
+  font-weight: 600;
+  font-size: 32rpx;
+}
+
+.format-desc {
+  color: #666;
+  font-size: 26rpx;
+  margin-top: 4rpx;
+}
+
+.format-radio {
+  width: 40rpx;
+  height: 40rpx;
+  border: 4rpx solid #e0e0e0;
+  border-radius: 50%;
+  position: relative;
+
+  .format-option--active & {
+    border-color: #6a5acd;
+  }
+
+  &__inner {
+    position: absolute;
+    width: 20rpx;
+    height: 20rpx;
+    background-color: #6a5acd;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.option-group {
+  margin-bottom: 40rpx;
+}
+
+.custom-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.switch-info {
+  flex: 1;
+}
+
+.option-label {
+  font-weight: 500;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.option-hint {
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 6rpx;
+}
+
+.page-range {
+  display: flex;
+  align-items: center;
+  margin-top: 16rpx;
+}
+
+.page-input {
+  flex: 1;
+  height: 80rpx;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 20rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+
+.page-separator {
+  margin: 0 20rpx;
+  color: #666;
+}
+
+.quality-picker {
+  height: 80rpx;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 20rpx;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+
+.convert-btn {
+  height: 50px;
+  background: linear-gradient(135deg, #6a5acd, #9370db);
+  color: #fff;
+  border: none;
+  border-radius: 50rpx;
+  padding: 24rpx 0;
+  font-weight: 500;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text {
+    margin-left: 10rpx;
+  }
+}
+

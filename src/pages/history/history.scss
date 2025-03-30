@@ -1,0 +1,362 @@
+.history-container {
+  min-height: 100vh;
+  background-color: #f8f9ff;
+}
+
+.header {
+  background: linear-gradient(135deg, #6a5acd, #9370db);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-actions {
+  display: flex;
+}
+
+.header-action {
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.history-content {
+  padding: 20px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #666;
+  position: relative;
+}
+
+.tab.active {
+  color: #6a5acd;
+  font-weight: 600;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 3px;
+  background-color: #6a5acd;
+  border-radius: 3px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-box uni-icons {
+  margin-right: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  height: 24px;
+}
+
+.record-list {
+  margin-bottom: 20px;
+}
+
+.record-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.record-item.selected {
+  background-color: #f0f0ff;
+  border: 1px solid #6a5acd;
+}
+
+.record-checkbox {
+  margin-right: 10px;
+}
+
+.record-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden; // 添加overflow属性确保内容不会溢出
+  width: 0; // 设置宽度为0，让flex-grow生效
+}
+
+.record-icon {
+  margin-right: 15px;
+  min-width: 40px; // 使用min-width而不是width
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0ff;
+  border-radius: 8px;
+  flex-shrink: 0; // 防止图标被压缩
+}
+
+// 添加图片图标的样式
+.file-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.record-details {
+  flex: 1;
+  overflow: hidden; // 保持这个属性
+  min-width: 0; // 添加min-width:0确保flex子元素可以正确收缩
+}
+
+.record-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  width: 100%; // 确保宽度占满
+}
+
+.record-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1; // 使用flex:1替代max-width
+  min-width: 0; // 确保可以正确收缩
+}
+
+.record-status {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  flex-shrink: 0; // 防止状态标签被压缩
+}
+
+.record-status.success {
+  color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.record-status.error {
+  color: #f44336;
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.record-info {
+  display: flex;
+  flex-direction: column; // 修改为纵向排列
+  width: 100%;
+}
+
+.record-format {
+  font-size: 12px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; // 使用100%宽度
+  margin-bottom: 4px; // 添加底部间距
+}
+
+.record-date {
+  font-size: 12px;
+  color: #999;
+  width: 100%; // 使用100%宽度
+}
+
+.record-actions {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.action-btn {
+  background: transparent;
+  border: none;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.action-btn.download {
+  color: #6a5acd;
+}
+
+.action-btn.delete {
+  color: #f44336;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.empty-icon {
+  margin-bottom: 20px;
+}
+
+.empty-text {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.empty-desc {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.empty-action {
+  background: linear-gradient(135deg, #6a5acd, #9370db);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.loading-more {
+  text-align: center;
+  padding: 15px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.bottom-actions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 20px;
+  background-color: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-all-action {
+  display: flex;
+  align-items: center;
+}
+
+.select-all-action text {
+  font-size: 14px;
+  color: #333;
+  margin-left: 5px;
+}
+.delete-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 6px 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn[disabled] {
+  opacity: 0.6;
+  background: #ccc;
+}
+
+// 头部样式
+.header {
+  background-color: #6a5acd;
+  padding: 15px 0;
+  color: #fff;
+  
+  .header-title-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .header-tip {
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-left: 8px;
+  }
+
+  .header-actions {
+    .header-action {
+      font-size: 14px;
+      padding: 5px 0;
+    }
+  }
+}

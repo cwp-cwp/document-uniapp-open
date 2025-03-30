@@ -1,0 +1,212 @@
+/* 格式指南页样式 */
+.guide-page {
+  min-height: 100vh;
+  padding: 0 10px 60px 10px;
+  background-color: #f8f9fa;
+}
+
+.search-container {
+  margin: 0 0 15px 0;
+}
+
+/* 覆盖uni-search-bar的默认样式 */
+:deep(.uni-searchbar) {
+  padding: 10px 0;
+}
+
+:deep(.uni-searchbar__box) {
+  height: 42px;
+  border-radius: 20px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+:deep(.uni-searchbar__box-search-input) {
+  font-size: 14px;
+}
+
+:deep(.uni-searchbar__box-icon-search) {
+  margin-left: 5px;
+}
+
+.filter-scroll {
+  white-space: nowrap;
+  margin: 15px 0;
+}
+
+.filter-buttons {
+  display: flex;
+  padding: 0 5px;
+}
+
+.filter-btn {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  color: #6c757d;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.filter-btn.active {
+  background-color: #6a5acd;
+  color: white;
+  border-color: #6a5acd;
+}
+
+.format-list {
+  margin-bottom: 20px;
+}
+
+.format-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.format-card:active {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.format-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.file-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+/* 添加图片图标的样式 */
+.format-icon-img {
+  width: 24px;
+  height: 24px;
+}
+
+.pdf-icon {
+  background-color: rgba(234, 67, 53, 0.1);
+}
+
+.word-icon {
+  background-color: rgba(66, 133, 244, 0.1);
+}
+
+.excel-icon {
+  background-color: rgba(52, 168, 83, 0.1);
+}
+
+.ppt-icon {
+  background-color: rgba(251, 188, 5, 0.1);
+}
+
+.image-icon {
+  background-color: rgba(156, 39, 176, 0.1);
+}
+
+.format-title {
+  flex: 1;
+}
+
+.format-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.format-info {
+  color: #6c757d;
+  font-size: 12px;
+  display: block;
+}
+
+.format-desc {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.tips-section {
+  margin-top: 10px;
+}
+
+.tips-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.tips-list {
+  margin-top: 5px;
+}
+
+.tip-item {
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.tip-bullet {
+  margin-right: 8px;
+}
+
+.convert-btn {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+  transition: all 0.3s;
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.convert-btn .iconfont {
+  margin-right: 5px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.empty-icon {
+  font-size: 40px;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.empty-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.empty-desc {
+  font-size: 14px;
+  color: #6c757d;
+  display: block;
+}
+
+@media (max-width: 375px) {
+  .format-name {
+    max-width: 150px;
+  }
+}

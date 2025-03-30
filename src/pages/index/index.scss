@@ -1,0 +1,438 @@
+/* 首页样式 */
+
+// 页面容器
+.index-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+// 通用容器
+.container {
+  padding: 0 10px;
+}
+
+// 头部样式
+.header {
+  background: linear-gradient(135deg, #8d6fd8, #6f5dcd);
+  padding: 30px 0; // 从原来的20px增加到30px
+  color: #fff;
+  text-align: center;
+
+  .title {
+    font-size: 24px; // 从原来的22px增加到24px
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px; // 增加标题与副标题之间的间距
+  }
+
+  .subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 5px;
+    display: block;
+  }
+}
+
+// 轮播图样式
+.carousel {
+  height: 180px;
+  margin: 15px 0 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+
+    .carousel-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      display: block;
+    }
+
+    .carousel-desc {
+      font-size: 12px;
+      color: #fff;
+      opacity: 0.9;
+      display: block;
+      margin-top: 4px;
+    }
+  }
+}
+
+// 功能区样式
+.feature-card {
+  padding: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.feature-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(135deg, #a289da, #6e5ccd);
+  color: #fff;
+  text-align: center;
+  height: 50%;
+}
+
+.feature-icon {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-body {
+  height: 50%;
+  background-color: white;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.feature-kong {
+  height: 10px;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.feature-desc {
+  color: #999;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+// 通知公告样式
+.notice-container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+  .notice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .notice-title {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+
+      .iconfont {
+        font-size: 18px;
+        color: #6a5acd;
+        margin-right: 5px;
+      }
+    }
+
+    .notice-more {
+      font-size: 12px;
+      color: #999;
+
+      .iconfont {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .notice-list {
+    .notice-item {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .notice-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #6a5acd;
+        margin-right: 8px;
+        flex-shrink: 0;
+      }
+
+      .notice-text {
+        flex: 1;
+        font-size: 14px;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .notice-date {
+        font-size: 12px;
+        color: #999;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+// 最近转换样式
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+
+  .iconfont {
+    font-size: 18px;
+    color: #6a5acd;
+    margin-right: 5px;
+  }
+}
+
+.recent-conversions {
+  margin-bottom: 20px;
+
+  .recent-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+    .file-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      flex-shrink: 0;
+
+      /* 添加图片图标样式 */
+      .file-icon-img {
+        width: 20px;
+        height: 20px;
+      }
+
+      &.pdf-icon {
+        background-color: #f44336;
+      }
+
+      &.word-icon {
+        background-color: #2196f3;
+      }
+
+      &.excel-icon {
+        background-color: #4caf50;
+      }
+
+      &.ppt-icon {
+        background-color: #ff9800;
+      }
+
+      .iconfont {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+    .file-info {
+      flex: 1;
+      width: 0; // 添加宽度为0，确保子元素不会超出父容器
+
+      .file-name {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%; // 确保最大宽度不超过父容器
+      }
+
+      .file-meta {
+        font-size: 12px;
+        color: #999;
+        display: block;
+        margin-top: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; // 也为元数据添加省略号效果
+      }
+    }
+  }
+}
+
+// VIP会员卡片样式
+.vip-card {
+  background: linear-gradient(135deg, #fdb841, #ffa500);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  .vip-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4f;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 10px;
+  }
+
+  .vip-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 12px;
+    display: block;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .vip-feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .iconfont {
+      font-size: 16px;
+      color: #fff;
+      margin-right: 5px;
+    }
+
+    text {
+      font-size: 14px;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .vip-btn {
+    background-color: #fff;
+    color: #ff9800;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 20px;
+    margin-top: 12px;
+    display: block;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// 广告区域样式
+.ad-container {
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+
+  .ad-image {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .ad-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+
+  .ad-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+
+    .ad-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      display: block;
+    }
+
+    .ad-desc {
+      font-size: 12px;
+      color: #fff;
+      opacity: 0.9;
+      display: block;
+      margin-top: 4px;
+    }
+  }
+}
+
+// 快速开始悬浮按钮
+.quick-start {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #886bd6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(106, 90, 205, 0.5);
+  z-index: 99;
+}
+
+// 添加通知栏样式
+.vip-notice {
+  margin: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.1);
+}
