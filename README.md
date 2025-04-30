@@ -17,12 +17,12 @@
 
 扫描下方二维码，立即体验文档格式转换小程序：
 
-![文档格式转换小程序](./src/static/images/gh_376a94762697_430.jpg)
+![文档格式转换小程序](https://www.chenwp.top:8443/minio-file/document/2025/4/27/ce86b4b49176d5adc3b6df9e027d0412e6ccbb8e4f357a168eaeccff06eb27d7.jpg)
 
 ## 系统截图
 
-![文档格式转换小程序](./src/static/images/20250331141921.jpg)
-![文档格式转换小程序](./src/static/images/20250331141925.jpg)
+![文档格式转换小程序](https://www.chenwp.top:8443/minio-file/document/2025/4/27/15d39613aaea573c4a8cc9196a942c70742f6c38dd3804c6a6accd756a229cfe.jpg)
+![文档格式转换小程序](https://www.chenwp.top:8443/minio-file/document/2025/4/27/0f5eac85dc33b2af5281bfc0bf2b683a986f8ddb1f7f990bb0a580b0720446e9.jpg)
 
 ## 使用说明
 
@@ -51,7 +51,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/cwp-cwp/document-uniapp-open.git
+git clone https://gitee.com/chen_wp/document-uniapp-open.git
 
 # 进入项目目录
 cd document-uniapp-open
@@ -88,7 +88,6 @@ npm run build:h5  # H5版本
 
 - 作者：B超
 - 邮箱：1733459640@qq.com
-- 微信：![联系方式](./src/static/images/微信图片_20250330131323.jpg)
 
 
 ## 许可证
